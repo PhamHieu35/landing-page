@@ -10,9 +10,11 @@
     />
     <link rel="stylesheet" href="assets\fonts\fontawesome\css\all.css" />
     <link rel="stylesheet" href="assets\css\reset.css" />
-
-    <link rel="stylesheet" type="text/css" href="assets\css\main.css" />
     <link rel="stylesheet" href="assets\css\global.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/queries.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -31,7 +33,7 @@
         </div>
 
         <div class="container">
-          <nav>
+          <nav class="nav-pc">
             <ul id="main-menu" class="d-flex">
               <li><a href="">Trang chủ</a></li>
               <li><a href="" class="active">Thời trang</a></li>
@@ -39,6 +41,26 @@
               <li><a href="">Tin Tức</a></li>
               <li><a href="">Giới thiệu</a></li>
               <li><a href="">Liên hệ</a></li>
+            </ul>
+          </nav>
+          <label for="nav-mobile-input" class="nav-bar">
+            <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" hidden id="nav-mobile-input" class="nav-input" />
+
+          <label for="nav-mobile-input" class="nav-overlay"></label>
+
+          <nav class="nav-mobile">
+            <label for="nav-mobile-input" class="nav-mobile-close">
+              <i class="fas fa-times"></i>
+            </label>
+            <ul class="nav-mobile-list">
+              <li><a href="" class="nav-mobile-link">Trang chủ</a></li>
+              <li><a href="" class="nav-mobile-link">Thời trang</a></li>
+              <li><a href="" class="nav-mobile-link">Sản phẩm</a></li>
+              <li><a href="" class="nav-mobile-link">Tin Tức</a></li>
+              <li><a href="" class="nav-mobile-link">Giới thiệu</a></li>
+              <li><a href="" class="nav-mobile-link">Liên hệ</a></li>
             </ul>
           </nav>
         </div>
@@ -213,44 +235,46 @@
 
       <div id="footer">
         <div class="container">
-          <div class="box logo-footer">
-            <div class="box-head">
-              <h3>Unitop</h3>
+          <div class="footer-content d-flex">
+            <div class="box logo-footer">
+              <div class="box-head">
+                <h3>Unitop</h3>
+              </div>
+              <div class="box-body">
+                <a href="">
+                  <img src="./assets/image/logo2.webp" alt="" />
+                </a>
+              </div>
             </div>
-            <div class="box-body">
-              <a href="">
-                <img src="./assets/image/logo2.webp" alt="" />
-              </a>
+            <div class="box about-us">
+              <div class="box-head">
+                <h3>VỀ CHÚNG TÔI</h3>
+              </div>
+              <div class="box-body">
+                <p>Sản Phẩm với giao diện đẹp, cách bố trí bố cục đơn giản tiện lợi tăng trải nghiệm cho người dùng</p>
+                <a href="mailto:phamhieu2108nb@gmail.com">phamhieu2108nb@gmail.com</a>
+              </div>
             </div>
-          </div>
-          <div class="box about-us">
-            <div class="box-head">
-              <h3>VỀ CHÚNG TÔI</h3>
-            </div>
-            <div class="box-body">
-              <p>Sản Phẩm với giao diện đẹp, cách bố trí bố cục đơn giản tiện lợi tăng trải nghiệm cho người dùng</p>
-              <a href="mailto:phamhieu2108nb@gmail.com">phamhieu2108nb@gmail.com</a>
-            </div>
-          </div>
-          <div class="box follow-us">
-            <div class="box-head">
-              <h3>THEO DÕI</h3>
-            </div>
-            <div class="box-body">
-              <ul id="list-social" class="d-flex">
-                <li>
-                  <a href=""><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-youtube"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-pinterest"></i></a>
-                </li>
-              </ul>
+            <div class="box follow-us">
+              <div class="box-head">
+                <h3>THEO DÕI</h3>
+              </div>
+              <div class="box-body">
+                <ul id="list-social" class="d-flex">
+                  <li>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-pinterest"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

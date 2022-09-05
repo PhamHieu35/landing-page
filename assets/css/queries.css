@@ -1,0 +1,141 @@
+/* Big tablet to 1200px; */
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+  ul.list-featured-post li {
+    padding: 0px 10px;
+  }
+  ul.list-featured-post li .post-thumb img {
+    max-width: 100%;
+  }
+}
+
+/* Small tablet to big tablet from 768x to 1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0px 30px;
+  }
+  /* ul.list-post li .post-thumb img {
+    max-width: 95%;
+  } */
+
+  ul.list-post li .more-info a.post-title {
+    font-size: 17px;
+  }
+  #sidebar {
+    display: none;
+  }
+  #footer .box.logo-footer {
+    padding-right: 0px;
+  }
+  #footer .box.about-us {
+    padding-right: 0px;
+    text-align: justify;
+  }
+  #footer .box.follow-us {
+    padding-left: 40px;
+  }
+}
+
+/* Small phones to small tablets */
+@media only screen and (max-width: 767px) {
+  .nav-bar i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+  }
+
+  #header .container {
+    flex-direction: column;
+  }
+  #search {
+    margin-top: 30px;
+  }
+  form#search input {
+    background-color: #fff;
+    margin-left: 40px;
+    color: black;
+  }
+  form#search button {
+    right: 40px;
+  }
+  ul.list-featured-post {
+    flex-wrap: wrap;
+  }
+  ul.list-featured-post .post-title {
+    margin-top: 12px;
+  }
+  ul.list-featured-post li {
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+
+  #logo {
+    margin: 0px auto;
+  }
+  ul.list-post li {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  ul.list-post li .post-thumb img {
+    width: 295px;
+    position: relative;
+    left: 6px;
+  }
+  ul.list-post li .more-info {
+    flex: 475px;
+    padding-left: 5px;
+    padding-top: 15px;
+  }
+  #footer {
+    padding-top: 0px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer .box.about-us,
+  #footer .box.logo-footer,
+  #footer .box.follow-us {
+    flex: 0px;
+    margin: 0px auto;
+  }
+  #footer .box.logo-footer {
+    padding-bottom: 40px;
+  }
+  #footer .box.about-us .box-head,
+  .box-body {
+    display: block;
+    text-align: center;
+  }
+  #footer .box.follow-us {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  #footer .box.follow-us .box-head {
+    text-align: center;
+  }
+  #footer .box .box-body {
+    padding-top: 10px;
+  }
+  #wp-copyright {
+    font-size: 12px;
+  }
+  .container {
+    padding: 0 25px;
+  }
+  #main-menu {
+    display: none;
+  }
+}
